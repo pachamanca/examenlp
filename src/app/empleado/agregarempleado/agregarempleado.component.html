@@ -1,0 +1,21 @@
+<div class="container col-md-6">
+    <form action="">
+        <div class="form-group">
+            <label for="a">EMPLEADO</label>
+        </div>
+        <label>Nombre</label>
+        <input [(ngModel)]="empleado.nombres" name="nombres_empleado"  type="text" class="form-control" id="nombre_emp" > <br>
+
+        <label>Apellido</label>
+        <input [(ngModel)]="empleado.apellidos" name="apellidos_empleado"   type="text" class="form-control" id="apellido_emp" > <br>
+
+        <label>Cargo</label>
+        <input [(ngModel)]="empleado.cargo" name="cargo_empleado"   type="text" class="form-control" id="cargo_emp"> <br>
+
+        <label>DNI</label>
+        <input [(ngModel)]="empleado.dni" name="dni_empleado"    type="text" class="form-control" ><br>
+
+
+        <button (click)="guardarempleado()" class="btn btn-primary">Registrar</button>
+    </form>
+</div>

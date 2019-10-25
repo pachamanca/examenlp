@@ -1,0 +1,21 @@
+<div class="container" id="ancho">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Nº</th>
+                <th>ID</th>
+                <th>CURSO</th>
+                <th colspan="2">OPCION</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let curso of Cursos;let indice=index " class="text-center">
+                <td>{{indice+1}}</td>
+                <td>{{curso.idcurso}}</td>
+                <td>{{curso.nombre}}</td>
+                <td> <button (click)="editarcurso(curso)" class="btn btn-warning">Editar</button></td>
+                <td> <button (click)="eliminarcurso(curso)" class="btn btn-danger">Eliminar</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

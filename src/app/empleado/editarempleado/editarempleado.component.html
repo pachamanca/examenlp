@@ -1,0 +1,22 @@
+<div class="container col-md-6">
+    <h3>ACTUALIZANDO...</h3>
+    <hr>
+    <form action="">
+        <div class="form-group">
+            <label for="a">EMPLEADO</label>
+        </div>
+        <label>Nombre</label>
+        <input [(ngModel)]="empleado.nombres" name="empleado_nombres"  type="text" class="form-control" id="nom"> <br>
+
+        <label>Apellido</label>
+        <input [(ngModel)]="empleado.apellidos" name="empleado_apellidos"  type="text" class="form-control" id="ape"><br>
+
+        <label>Cargo</label>
+        <input [(ngModel)]="empleado.cargo" name="emplead
+        os_cargo"  type="text" class="form-control" id="car"><br>
+
+        <label>DNI</label>
+        <input [(ngModel)]="empleado.dni" name="empleado_dni"  type="text" class="form-control" id="dni"><br>
+        <button (click)="actualizarempleado(empleado)" class="btn btn-primary">ENVIAR</button>
+    </form>
+</div>

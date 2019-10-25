@@ -1,0 +1,21 @@
+<div class="container col-md-6">
+    <h3>ACTUALIZANDO...</h3>
+    <hr>
+    <form action="">
+        <div class="form-group">
+            <label for="a">ACTUALIZAR ALUMNO</label>
+        </div>
+        <label>Nombres</label>
+        <input [(ngModel)]="alumno.nombres" name="alumno_nombres"  type="text" class="form-control" > <br>
+
+        <label>Apellidos</label>
+        <input [(ngModel)]="alumno.apellidos" name="alumno_apellidos"  type="text" class="form-control" ><br>
+
+        <label>Codigo</label>
+        <input [(ngModel)]="alumno.codigo" name="alumno_codigo"  type="text" class="form-control"><br>
+
+        <label>DNI</label>
+        <input [(ngModel)]="alumno.dni" name="alumno_dni"  type="text" class="form-control" ><br>
+        <button (click)="actualizaralumno(alumno)" class="btn btn-primary">ENVIAR</button>
+    </form>
+</div>

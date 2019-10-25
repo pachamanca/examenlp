@@ -1,0 +1,11 @@
+<div class="container col-md-6">
+    <h3>Modificar</h3>
+    <hr>
+    <form action="">
+        <div class="form-group">
+            <label for="a">ESCUELA</label><br>
+        </div>
+        <input [(ngModel)]="escuela.nombre" name="escuela_nombre"  type="text" class="form-control" ><br>
+        <button (click)="actualizarescuela(escuela)" class="btn btn-primary">Modificar</button>
+    </form>
+</div>
